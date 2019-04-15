@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
+
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-=======
->>>>>>> origin/master
 
 @Component({
   selector: 'app-login',
@@ -11,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-<<<<<<< HEAD
+
   logIn : FormGroup;
 
   constructor( private router : Router,
@@ -23,17 +21,11 @@ export class LoginComponent implements OnInit {
                                         Validators.minLength(5) ] )
   });
  }
-=======
-  constructor() { }
->>>>>>> origin/master
 
   ngOnInit() {
   }
 
-<<<<<<< HEAD
   authenticate() {
-    
+
   }
-=======
->>>>>>> origin/master
 }
