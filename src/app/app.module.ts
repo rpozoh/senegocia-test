@@ -8,7 +8,10 @@ import { APP_ROUTES } from './app.routes';
 
 // Componentes
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';;
+import { LoginComponent } from './components/login/login.component';
+
+// Servicios
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { LoginComponent } from './components/login/login.component';;
     ReactiveFormsModule,
     RouterModule.forRoot( APP_ROUTES,{ useHash : true } )
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

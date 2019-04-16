@@ -1,4 +1,4 @@
-<form class="animated fadeIn" [formGroup]="logIn" (ngSubmit)="authenticate()" #form="ngForm">
+<form class="animated fadeIn" [formGroup]="logIn" (ngSubmit)="authenticate(username, password)" #form="ngForm">
   <div class="form-row">
     <h2>Iniciar Sesión</h2>
   </div>
@@ -18,6 +18,10 @@
     <div class="form-group col-md-6">
       <label for="password">Contraseña</label>
       <input class="form-control" type="text" [ngClass]="{ 'is-invalid' : !logIn.get( 'password' ).valid }" id="password" placeholder="Contraseña..." formControlName="password">
+    </div>
+    <div>
+      La contraseña debe ser igual al nombre de usuario
+    </div>
     </div>
     <div class="invalid-feedback" *ngIf="logIn.controls['password'].errors?.required">
       La contraseña es requerida
