@@ -4,16 +4,22 @@
 /dist
 /tmp
 /out-tsc
+<<<<<<< HEAD
 # Only exists if Bazel was run
 /bazel-out
+=======
+>>>>>>> origin/master
 
 # dependencies
 /node_modules
 
+<<<<<<< HEAD
 # profiling files
 chrome-profiler-events.json
 speed-measure-plugin.json
 
+=======
+>>>>>>> origin/master
 # IDEs and editors
 /.idea
 .project
@@ -29,7 +35,10 @@ speed-measure-plugin.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+<<<<<<< HEAD
 .history/*
+=======
+>>>>>>> origin/master
 
 # misc
 /.sass-cache

@@ -1,0 +1,36 @@
+<form class="animated fadeIn" [formGroup]="logIn" (ngSubmit)="authenticate(username, password)" #form="ngForm">
+  <div class="form-row">
+    <h2>Iniciar Sesión</h2>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="userName">Nombre de Usuario</label>
+      <input class="form-control" type="text" [ngClass]="{ 'is-invalid' : !logIn.get( 'userName' ).valid }" id="userName" placeholder="Nombre de Usuario..." formControlName="userName">
+    </div>
+    <div class="invalid-feedback" *ngIf="logIn.controls['userName'].errors?.required">
+      El nombre de usuario es requerido
+    </div>
+    <div class="invalid-feedback" *ngIf="logIn.controls['userName'].errors?.minlength">
+      El nombre de usuario debe ser minimo de {{ logIn.controls['userName'].errors.minlength.requiredLength }}!
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="password">Contraseña</label>
+      <input class="form-control" type="text" [ngClass]="{ 'is-invalid' : !logIn.get( 'password' ).valid }" id="password" placeholder="Contraseña..." formControlName="password">
+    </div>
+    <div>
+      La contraseña debe ser igual al nombre de usuario
+    </div>
+    </div>
+    <div class="invalid-feedback" *ngIf="logIn.controls['password'].errors?.required">
+      La contraseña es requerida
+    </div>
+    <div class="invalid-feedback" *ngIf="logIn.controls['password'].errors?.minlength">
+      La contraseña debe ser minimo de {{ logIn.controls['password'].errors.minlength.requiredLength }}!
+    </div>
+  </div>
+  <button class="btn btn-dark" type="submit" [disabled]="!form.valid">
+    Entrar
+  </button>
+</form>

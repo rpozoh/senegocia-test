@@ -5,17 +5,27 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+<<<<<<< HEAD
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+=======
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+>>>>>>> origin/master
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
+<<<<<<< HEAD
       "es2018",
+=======
+      "es2017",
+>>>>>>> origin/master
       "dom"
     ]
   }

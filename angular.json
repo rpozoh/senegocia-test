@@ -25,8 +25,12 @@
             "styles": [
               "src/styles.css"
             ],
+<<<<<<< HEAD
             "scripts": [],
             "es5BrowserSupport": true
+=======
+            "scripts": []
+>>>>>>> origin/master
           },
           "configurations": {
             "production": {
@@ -44,6 +48,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+<<<<<<< HEAD
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -52,6 +57,9 @@
                   "maximumError": "5mb"
                 }
               ]
+=======
+              "buildOptimizer": true
+>>>>>>> origin/master
             }
           }
         },
@@ -106,18 +114,24 @@
     "senegocia-test-e2e": {
       "root": "e2e/",
       "projectType": "application",
+<<<<<<< HEAD
       "prefix": "",
+=======
+>>>>>>> origin/master
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "senegocia-test:serve"
+<<<<<<< HEAD
           },
           "configurations": {
             "production": {
               "devServerTarget": "senegocia-test:serve:production"
             }
+=======
+>>>>>>> origin/master
           }
         },
         "lint": {
